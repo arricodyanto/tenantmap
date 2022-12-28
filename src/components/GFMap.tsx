@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return */
 import React, { useState } from 'react'
 import { Box,  Button,  ButtonGroup,  Card, CardActionArea, CardActions, CardContent, CardMedia, Fab, Popover, Typography } from '@mui/material'
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
@@ -40,7 +39,7 @@ export const GFMap = () => {
     // console.log(isFound)
 
   return (
-      <Box className=' container relative border-2 border-slate-300 mx-auto lg:max-w-[1080px] sm:max-w-[650px]:'>
+      <Box id='wrapper' className='container relative border-2 border-slate-300 mx-auto lg:max-w-[1080px] sm:max-w-[650px]:'>
         <TransformWrapper
         initialScale={1} limitToBounds={false} centerOnInit={true}
         >
@@ -358,7 +357,7 @@ const itemPopover = [
     },
     {
         id: '06',
-        name: 'Bucherry',
+        name: 'Butchery',
         top: '329.545px',
         left: '314px',
         image: '/images/image-2.png',
