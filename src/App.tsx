@@ -1,4 +1,4 @@
-import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, Switch, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { useState } from "react"
 import './App.css';
@@ -6,6 +6,13 @@ import { FirstMap } from './components/FirstMap';
 import { GFMap } from './components/GFMap';
 import { SFMap } from './components/SFMap';
 import { Box } from '@mui/system';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
 
 // import { GroundMap } from './components/GroundMap';
 // import { GroundMapp } from './components/GroundMapp';
@@ -18,7 +25,15 @@ function App() {
   }
   return (
       <div className="App">
-        <Box className='w-[1100px] mx-auto'>
+        
+        <Router>
+          <Routes>
+            <Route path='/' element={<GFMap></GFMap>} />
+            <Route path='/first' element={<FirstMap></FirstMap>} />
+            <Route path='/second' element={<SFMap></SFMap>} />
+          </Routes>
+        </Router>
+        {/* <Box className='w-[1100px] mx-auto'>
           <Accordion expanded={ expanded === 'ground'} onChange={(event, isExpanded) => handleChange(isExpanded, 'ground') }>
               <AccordionSummary id="ground-header" aria-controls="ground-content" expandIcon={<ExpandMoreIcon />}>
                   <Typography>Ground Floor</Typography>
@@ -43,7 +58,7 @@ function App() {
                   <SFMap></SFMap>
               </AccordionDetails>
           </Accordion>
-        </Box>
+        </Box> */}
 
         {/* <FirstMap></FirstMap> */}
         {/* <SFMap></SFMap> */}
