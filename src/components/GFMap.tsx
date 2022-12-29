@@ -73,15 +73,14 @@ export const GFMap = () => {
                         if(item.id === tenant){
                             return (
                                 <>
-                                    <Popover id="mouse-over-popover" sx={{ pointerEvents: 'none', }} open={open} anchorEl={anchorEl} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }} onClose={handlePopoverClose} transitionDuration={0}>
-                                        {/* <Typography>{item.name}</Typography> */}
+                                    {/* <Popover id="mouse-over-popover" sx={{ pointerEvents: 'none', }} open={open} anchorEl={anchorEl} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }} onClose={handlePopoverClose} transitionDuration={0}>
                                         <Card className='w-32 p-2'>
                                             <CardActionArea>
                                                 <CardMedia component="img" width="128" height="128" image={item.image} alt={item.name} />
                                                 <Typography className='text-center pt-1' variant='body2'>{item.name}</Typography>
                                             </CardActionArea>
                                         </Card>
-                                    </Popover>
+                                    </Popover> */}
 
                                     <Popover id={id} open={openEl} anchorEl={anchorClick} onClose={handleClose} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }}>
                                         <CardContent id='popo' className='w-80'>
