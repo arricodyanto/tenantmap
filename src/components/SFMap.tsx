@@ -63,9 +63,9 @@ export const SFMap = () => {
                 {itemPopover.map((item) => (
                     <>
                         {/* Handle Popover */}
-                        {/* <Box key={item.id} id={item.id} sx={{ top: `${item.top}`, left: `${item.left}` }} className='absolute hover:brightness-110 hover:cursor-pointer' onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose} onClick={handleClick}>
+                        <Box key={item.id} id={item.id} sx={{ top: `${item.top}`, left: `${item.left}` }} className='absolute hover:brightness-110 hover:cursor-pointer' onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose} onClick={handleClick}>
                             <FmdGoodIcon sx={{fontSize: 12, color: '#af003a'}}/>
-                        </Box> */}
+                        </Box>
                     </>
                 ))}
 
@@ -103,6 +103,7 @@ export const SFMap = () => {
                 <Box id='map-canvasss' className='w-[1080px]'>
                     <svg width="1040" height="900" viewBox="0 0 1040 900" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SF">
+                        <path id="Vector 264" d="M452.681 699.738L114.612 477.324C101.823 468.91 102.842 449.835 116.455 442.831L562.369 213.411C566.546 211.263 571.488 211.194 575.723 213.227L619 234C629.743 228.944 642.204 229.054 652.857 234.298L959.455 385.225C973.479 392.129 974.518 411.729 961.304 420.077L517.705 700.337C497.792 712.918 472.359 712.684 452.681 699.738Z" fill="#F4F4F4"/>
                         <path id="Vector 258" d="M618 273L579 254L498 299L588 343.5L571.5 357.5L588 374.5L535.5 404.5L542 409L521.5 420.5L528 424.5L500 440L629 512.5L653 528.5L433 662.5L453.5 675.5L658.5 549.5H731L953 413C962.042 406.219 960.571 392.242 950.316 387.492L766.683 302.423C755.012 297.017 741.707 296.316 729.532 300.466L726.5 301.5L641.5 260.5L618 273Z" fill="#D9D9D9"/>
                         <path id="Vector 262" d="M629 255L645 245.5L768.5 303H727.5L629 255Z" fill="#D9D9D9"/>
                         <path id="Vector 263" d="M535.5 404.5L542.5 409L521.5 420.5L528.5 424.5L503 439L489.5 431" stroke="#888888" stroke-width="0.5"/>
@@ -519,7 +520,7 @@ const itemPopover = [
     {
         id : '01',
         name: 'Inul Vizta Karaoke',
-        top: '211.545px',
+        top: '211.523px',
         left: '487px',
         image: '/images/default-image.png',
     },
