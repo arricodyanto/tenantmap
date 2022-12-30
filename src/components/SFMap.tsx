@@ -76,15 +76,15 @@ export const SFMap = () => {
                         if(item.id === tenant){
                             return (
                                 <>
-                                    <Popover id="mouse-over-popover" sx={{ pointerEvents: 'none', }} open={open} anchorEl={anchorEl} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }} onClose={handlePopoverClose} transitionDuration={0}>
+                                    {/* <Popover id="mouse-over-popover" sx={{ pointerEvents: 'none', }} open={open} anchorEl={anchorEl} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }} onClose={handlePopoverClose} transitionDuration={0}> */}
                                         {/* <Typography>{item.name}</Typography> */}
-                                        <Card className='w-32 p-2'>
+                                        {/* <Card className='w-32 p-2'>
                                             <CardActionArea>
                                                 <CardMedia component="img" width="128" height="128" image={item.image} alt={item.name} />
                                                 <Typography className='text-center pt-1' variant='body2'>{item.name}</Typography>
                                             </CardActionArea>
                                         </Card>
-                                    </Popover>
+                                    </Popover> */}
 
                                     <Popover id={id} open={openEl} anchorEl={anchorClick} onClose={handleClose} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }}>
                                         <CardContent id='popo' className='w-80'>
@@ -523,317 +523,230 @@ const itemPopover = [
     {
         id : '01',
         name: 'Inul Vizta Karaoke',
-        top: '211.523px',
-        left: '487px',
+        top: '224.909px',
+        left: '549px',
         image: '/images/default-image.png',
     },
     {
         id: '02',
         name: 'Rifan Index Trading',
-        top: '240.545px',
-        left: '432px',
+        top: '250.909px',
+        left: '498px',
         image: '/images/image-2.png',
     },
     {
         id: '03',
         name: 'A&W Restaurant',
-        top: '260.545px',
-        left: '391px',
+        top: '271.9095px',
+        left: '451.34px',
         image: '/images/default-image.png',
 
     },
     {
         id: '04',
         name: 'Hoka-Hoka Bento',
-        top: '289.545px',
-        left: '332px',
+        top: '304.909px',
+        left: '388.301px',
         image: '/images/image-2.png',
     },
     {
         id: '05',
         name: 'Mie Pasar Baru',
-        top: '301.545px',
-        left: '308px',
+        top: '317.909px',
+        left: '366.438px',
         image: '/images/default-image.png',
 
     },
     {
         id: '06',
-        name: 'Butchery',
-        top: '329.545px',
-        left: '314px',
+        name: 'R12',
+        top: '325.909px',
+        left: '347.375px',
         image: '/images/image-2.png',
     },
     {
         id: '07',
         name: 'Mangos',
-        top: '325.545px',
-        left: '262px',
+        top: '337.909px',
+        left: '328.68px',
         image: '/images/default-image.png',
 
     },
     {
         id: '08',
-        name: 'blank',
-        top: '343.545px',
-        left: '226px',
+        name: 'Bucherri',
+        top: '354.909px',
+        left: '295.391px',
         image: '/images/image-2.png',
 
     },
     {
         id: '09',
         name: 'Happy Puppy',
-        top: '360.545px',
-        left: '188px',
+        top: '378.909px',
+        left: '246.375px',
         image: '/images/default-image.png',
 
     },
     {
         id: '10',
         name: 'Natasha',
-        top: '372.545px',
-        left: '164px',
+        top: '400.909px',
+        left: '208.027px',
         image: '/images/image-2.png',
 
     },
     {
         id: '11',
-        name: 'Pizza Hut',
-        top: '398.545px',
-        left: '135px',
+        name: 'MR. DIY',
+        top: '446.909px',
+        left: '189.719px',
         image: '/images/default-image.png',
 
     },
     {
         id: '12',
-        name: 'Excelso',
-        top: '464.545px',
-        left: '225px',
+        name: 'Salon Lie Kuang',
+        top: '486.9095px',
+        left: '226.156px',
         image: '/images/image-2.png',
 
     },
     {
         id: '13',
-        name: 'Ramenya',
-        top: '505.545px',
-        left: '290px',
+        name: 'Miniso',
+        top: '513.909px',
+        left: '267.031px',
         image: '/images/default-image.png',
 
     },
     {
         id: '14',
-        name: 'JCO Donut',
-        top: '567.545px',
-        left: '383px',
+        name: 'Istana Mie',
+        top: '546.909px',
+        left: '309.992px',
         image: '/images/image-2.png',
 
     },
     {
         id: '15',
-        name: 'KFC',
-        top: '602.545px',
-        left: '469px',
+        name: 'JacoTV',
+        top: '569.909px',
+        left: '347.129px',
         image: '/images/default-image.png',
 
     },
     {
         id: '16',
-        name: 'Bread Talk',
-        top: '571.545px',
-        left: '524px',
+        name: 'Ada',
+        top: '600.909px',
+        left: '408.066px',
         image: '/images/image-2.png',
 
     },
     {
         id: '17',
-        name: 'Solaria',
-        top: '550.545px',
-        left: '560px',
+        name: 'My Style',
+        top: '559.909px',
+        left: '497.293px',
         image: '/images/default-image.png',
 
     },
     {
         id: '18',
-        name: 'Main Atrium',
-        top: '468.545px',
-        left: '392px',
+        name: 'Toilets',
+        top: '538.909px',
+        left: '549.082px',
         image: '/images/image-2.png',
 
     },
     {
         id: '19',
-        name: 'Bread Talk',
-        top: '420.545px',
-        left: '309px',
+        name: 'L2.6 A',
+        top: '518.909px',
+        left: '525.066px',
         image: '/images/default-image.png',
 
     },
     {
         id: '20',
-        name: 'Manzone',
-        top: '517.545px',
-        left: '641px',
+        name: 'Armey',
+        top: '511.909px',
+        left: '507.465px',
         image: '/images/image-2.png',
 
     },
     {
         id: '21',
-        name: 'Body Shop',
-        top: '442.545px',
-        left: '520px',
+        name: 'Candy',
+        top: '499.909px',
+        left: '492.156px',
         image: '/images/default-image.png',
 
     },
     {
         id: '22',
-        name: 'Nature Republic',
-        top: '420.545px',
-        left: '479px',
+        name: 'Oneda',
+        top: '488.909px',
+        left: '474.594px',
         image: '/images/image-2.png',
 
     },
     {
         id: '23',
-        name: 'Matahari',
-        top: '387.545px',
-        left: '728px',
+        name: 'Sun City Restaurant',
+        top: '465.909px',
+        left: '527.469px',
         image: '/images/default-image.png',
 
     },
     {
         id: '24',
-        name: 'Bata',
-        top: '401.545px',
-        left: '534px',
+        name: 'Hearts',
+        top: '460.909px',
+        left: '427.492px',
         image: '/images/image-2.png',
 
     },
     {
         id: '25',
-        name: 'Watch Club',
-        top: '384.545px',
-        left: '564px',
+        name: 'Roti Boy',
+        top: '443.909px',
+        left: '458.566px',
         image: '/images/default-image.png',
 
     },
     {
         id: '26',
-        name: 'Optik Melawai',
-        top: '330.545px',
-        left: '659px',
+        name: 'Mixue',
+        top: '426.909px',
+        left: '489.504px',
         image: '/images/image-2.png',
 
     },
     {
         id: '27',
-        name: 'Shigeru',
-        top: '316.545px',
-        left: '566px',
+        name: 'Mushola',
+        top: '471.909px',
+        left: '740.73px',
         image: '/images/default-image.png',
 
         
     },
     {
         id: '28',
-        name: 'Chattime Cupbob',
-        top: '310.545px',
-        left: '524px',
+        name: 'Funworld',
+        top: '373.909px',
+        left: '475.52px',
         image: '/images/image-2.png',
 
     },
     {
         id: '29',
-        name: 'Payless',
-        top: '265.545px',
-        left: '671px',
+        name: 'Gramedia',
+        top: '348.909px',
+        left: '410.504px',
         image: '/images/default-image.png',
-
-    },
-    {
-        id: '30',
-        name: 'Converse',
-        top: '223.545px',
-        left: '589px',
-        image: '/images/image-2.png',
-
-    },
-    {
-        id: '31',
-        name: 'Ichiban Sushi',
-        top: '241.545px',
-        left: '524px',
-        image: '/images/default-image.png',
-
-    },
-    {
-        id: '32',
-        name: 'Op Tunggal',
-        top: '256.545px',
-        left: '494px',
-        image: '/images/image-2.png',
-
-    },
-    {
-        id: '33',
-        name: 'A&W Restaurant',
-        top: '271.545px',
-        left: '465px',
-        image: '/images/default-image.png',
-
-    },
-    {
-        id: '34',
-        name: 'Optik Seis',
-        top: '296.545px',
-        left: '435px',
-        image: '/images/image-2.png'
-    },
-    {
-        id: '35',
-        name: 'Gosh',
-        top: '308.545px',
-        left: '411px',
-        image: '/images/default-image.png',
-
-    },
-    {
-        id: '36',
-        name: 'Belagio',
-        top: '320.545px',
-        left: '388px',
-        image: '/images/image-2.png',
-
-    },
-    {
-        id: '37',
-        name: 'Giordano',
-        top: '334.545px',
-        left: '362px',
-        image: '/images/default-image.png',
-
-    },
-    {
-        id: '38',
-        name: 'Donini',
-        top: '359.545px',
-        left: '314px',
-        image: '/images/image-2.png',
-
-    },
-    {
-        id: '39',
-        name: 'Rotili',
-        top: '373.545px',
-        left: '286px',
-        image: '/images/default-image.png',
-
-    },
-    {
-        id: '40',
-        name: 'The Excecutive',
-        top: '387.545px',
-        left: '258px',
-        image: '/images/image-2.png',
 
     },
 ]
