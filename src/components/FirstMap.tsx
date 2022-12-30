@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box,  Button,  ButtonGroup,  Card, CardActionArea, CardActions, CardContent, CardMedia, Fab, Popover, Typography } from '@mui/material'
+import { Box,  Button,  ButtonGroup,  Card, CardActionArea, CardActions, CardContent, CardMedia, Fab, Modal, Popover, Typography } from '@mui/material'
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -27,6 +27,11 @@ export const FirstMap = () => {
     };
     const openEl = Boolean(anchorClick);
     const id = openEl ? 'simple-popover' : undefined;
+
+    // Modal in Popover
+    const [openn, setOpenn] = React.useState(false);
+    const handleOpenn = () => setOpenn(true);
+    const handleCloses = () => setOpenn(false);
 
     const [tenant, setTenant] = useState('')
     // const isFound = itemPopover.filter((item) => {
@@ -87,14 +92,29 @@ export const FirstMap = () => {
                                     </Popover> */}
 
                                     <Popover id={id} open={openEl} anchorEl={anchorClick} onClose={handleClose} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }}>
-                                        <CardContent id='popo' className='w-80'>
-                                            <Typography sx={{ fontWeight: 'bold', fontSize: '16',}}>
-                                                {item.name}
-                                            </Typography>
-                                        </CardContent>
-                                        <CardActions className='float-right'>
-                                            <Button sx={{ textTransform: 'none' }} variant="contained" size="small" disableElevation>Lihat Lokasi</Button>
-                                        </CardActions>
+                                        <Card className='w-52'>
+                                            <CardMedia sx={{ maxHeight: 128 }} component="img" alt='image' height='128' image={item.image} />
+                                            <CardContent>
+                                                <Typography sx={{ fontWeight: 'bold', fontSize: '16',}}>
+                                                    {item.name}
+                                                </Typography>
+                                            </CardContent>
+                                            <CardActions>
+                                                {/* Popover Media */}
+                                                <Button className='mx-auto' sx={{ textTransform: 'none' }} variant="contained" color="info" size="small" disableElevation onClick={handleOpenn}>Lihat Lokasi</Button>
+                                                <Modal open={openn} onClose={handleCloses} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+                                                    <Box className='absolute w-96 bg-white p-2 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-sm border border-info'>
+                                                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                                                        {item.name}
+                                                    </Typography>
+                                                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus ullam, neque laudantium debitis deleniti illum quis aliquam praesentium voluptate rem assumenda cumque modi repudiandae, quasi sunt. A, fuga quasi.
+                                                    </Typography>
+                                                    </Box>
+                                                </Modal>
+
+                                            </CardActions>
+                                        </Card>
                                     </Popover>
                                 </>
                             )
