@@ -63,9 +63,9 @@ export const FirstMap = () => {
                 {itemPopover.map((item) => (
                     <>
                         {/* Handle Popover */}
-                        {/* <Box key={item.id} id={item.id} sx={{ top: `${item.top}`, left: `${item.left}` }} className='absolute hover:brightness-110 hover:cursor-pointer' onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose} onClick={handleClick}>
+                        <Box key={item.id} id={item.id} sx={{ top: `${item.top}`, left: `${item.left}` }} className='absolute hover:brightness-110 hover:cursor-pointer' onMouseEnter={handlePopoverOpen} onMouseLeave={handlePopoverClose} onClick={handleClick}>
                             <FmdGoodIcon sx={{fontSize: 12, color: '#af003a'}}/>
-                        </Box> */}
+                        </Box>
                     </>
                 ))}
 
@@ -372,8 +372,8 @@ const itemPopover = [
     {
         id : '01',
         name: 'Inul Vizta Karaoke',
-        top: '211.545px',
-        left: '487px',
+        top: '231.182px',
+        left: '559.989px',
         image: '/images/default-image.png',
     },
     {
