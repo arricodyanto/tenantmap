@@ -60,6 +60,9 @@ export const GFMap = () => {
             </Box>
 
             <TransformComponent>
+                <Box id='pin' sx={{ top: '181.545px', left: '487px' }} className='absolute hover:brightness-110 hover:cursor-pointer'>
+                    <FmdGoodIcon sx={{fontSize: 12}} color="success"/>
+                </Box>
                 {itemPopover.map((item) => (
                     <>
                         {/* Handle Popover */}
@@ -98,8 +101,7 @@ export const GFMap = () => {
                             return null
                         }
                 })}
-
-                <Box id='map-canvas' className='w-[1000px]'>
+                <Box id='map-canvas' className='w-[1080px]'>
                     <svg width="1080" height="900" viewBox="0 0 1080 900" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="GF">
                             <g id="ground" filter="url(#filter0_d_1_2)">

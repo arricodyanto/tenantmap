@@ -60,6 +60,9 @@ export const FirstMap = () => {
             </Box>
 
             <TransformComponent>
+                <Box id='pin' sx={{ top: '181.545px', left: '487px' }} className='absolute hover:brightness-110 hover:cursor-pointer'>
+                    <FmdGoodIcon sx={{fontSize: 12}} color="success"/>
+                </Box>
                 {itemPopover.map((item) => (
                     <>
                         {/* Handle Popover */}
