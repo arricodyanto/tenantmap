@@ -76,15 +76,15 @@ export const FirstMap = () => {
                         if(item.id === tenant){
                             return (
                                 <>
-                                    <Popover id="mouse-over-popover" sx={{ pointerEvents: 'none', }} open={open} anchorEl={anchorEl} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }} onClose={handlePopoverClose} transitionDuration={0}>
+                                    {/* <Popover id="mouse-over-popover" sx={{ pointerEvents: 'none', }} open={open} anchorEl={anchorEl} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }} onClose={handlePopoverClose} transitionDuration={0}> */}
                                         {/* <Typography>{item.name}</Typography> */}
-                                        <Card className='w-32 p-2'>
+                                        {/* <Card className='w-32 p-2'>
                                             <CardActionArea>
                                                 <CardMedia component="img" width="128" height="128" image={item.image} alt={item.name} />
                                                 <Typography className='text-center pt-1' variant='body2'>{item.name}</Typography>
                                             </CardActionArea>
                                         </Card>
-                                    </Popover>
+                                    </Popover> */}
 
                                     <Popover id={id} open={openEl} anchorEl={anchorClick} onClose={handleClose} anchorOrigin={{ vertical: 'top', horizontal: 'center', }} transformOrigin={{ vertical: 'bottom', horizontal: 'center', }}>
                                         <CardContent id='popo' className='w-80'>
@@ -390,7 +390,7 @@ const itemPopover = [
         id: '03',
         name: 'A&W Restaurant',
         top: '263.919px',
-        left: '324px',
+        left: '446.079px',
         image: '/images/default-image.png',
 
     },
@@ -451,240 +451,304 @@ const itemPopover = [
     {
         id: '11',
         name: 'Vinolia',
-        top: '469.971px',
-        left: '121.616px',
+        top: '444.971px',
+        left: '119.616px',
         image: '/images/default-image.png',
 
     },
     {
         id: '12',
         name: 'Watson',
-        top: '507.037px',
-        left: '170.086px',
+        top: '482.037px',
+        left: '168.086px',
         image: '/images/image-2.png',
 
     },
     {
         id: '13',
         name: 'DeLunos',
-        top: '521.293px',
-        left: '191.47px',
+        top: '496.293px',
+        left: '189.47px',
         image: '/images/default-image.png',
 
     },
     {
         id: '14',
         name: 'PACC',
-        top: '533.41px',
-        left: '212.142px',
+        top: '508.41px',
+        left: '210.142px',
         image: '/images/image-2.png',
 
     },
     {
         id: '15',
         name: 'Samsung',
-        top: '545.528px',
-        left: '229.249px',
+        top: '520.528px',
+        left: '227.249px',
         image: '/images/default-image.png',
 
     },
     {
         id: '16',
         name: 'Christopher Salon',
-        top: '564.773px',
-        left: '259.899px',
+        top: '539.773px',
+        left: '257.899px',
         image: '/images/image-2.png',
 
     },
     {
         id: '17',
         name: 'Hardware',
-        top: '593.286px',
-        left: '306.944px',
+        top: '568.286px',
+        left: '304.944px',
         image: '/images/default-image.png',
 
     },
     {
         id: '18',
         name: 'Sistersel',
-        top: '617.521px',
-        left: '343.297px',
+        top: '592.521px',
+        left: '341.297px',
         image: '/images/image-2.png',
 
     },
     {
         id: '19',
         name: 'Hush Puppies',
-        top: '635.341px',
-        left: '371.09px',
+        top: '610.341px',
+        left: '369.09px',
         image: '/images/default-image.png',
 
     },
     {
         id: '20',
         name: 'Kidz Stasion',
-        top: '651.735px',
-        left: '431.684px',
+        top: '626.735px',
+        left: '429.684px',
         image: '/images/image-2.png',
 
     },
     {
         id: '21',
-        name: 'Body Shop',
-        top: '611.818px',
-        left: '487.283px',
+        name: 'Noaeveryday',
+        top: '586.818px',
+        left: '485.283px',
         image: '/images/default-image.png',
 
     },
     {
         id: '22',
-        name: 'Nature Republic',
-        top: '598.275px',
-        left: '518.646px',
+        name: 'Es Teller77',
+        top: '567.275px',
+        left: '516.646px',
         image: '/images/image-2.png',
 
     },
     {
         id: '23',
-        name: 'Matahari',
-        top: '567.625px',
-        left: '533.615px',
+        name: 'Andrew Smith',
+        top: '542.625px',
+        left: '531.615px',
         image: '/images/default-image.png',
 
     },
     {
         id: '24',
-        name: 'Bata',
-        top: '438.608px',
-        left: '673.324px',
+        name: 'Matahari',
+        top: '413.608px',
+        left: '671.324px',
         image: '/images/image-2.png',
 
     },
     {
         id: '25',
-        name: 'Watch Club',
-        top: '384.545px',
-        left: '564px',
+        name: 'Aily Diaomnd',
+        top: '500.569px',
+        left: '461.76px',
         image: '/images/default-image.png',
 
     },
     {
         id: '26',
-        name: 'Optik Melawai',
-        top: '330.545px',
-        left: '659px',
+        name: 'Gaudi',
+        top: '490.59px',
+        left: '443.94px',
         image: '/images/image-2.png',
 
     },
     {
         id: '27',
-        name: 'Shigeru',
-        top: '316.545px',
-        left: '566px',
+        name: 'Erafone',
+        top: '478.473px',
+        left: '423.982px',
         image: '/images/default-image.png',
 
         
     },
     {
         id: '28',
-        name: 'Chattime Cupbob',
-        top: '310.545px',
-        left: '524px',
+        name: 'Alexis',
+        top: '467.781px',
+        left: '405.449px',
         image: '/images/image-2.png',
 
     },
     {
         id: '29',
-        name: 'Payless',
-        top: '265.545px',
-        left: '671px',
+        name: 'Sharks',
+        top: '456.376px',
+        left: '388.342px',
         image: '/images/default-image.png',
 
     },
     {
         id: '30',
-        name: 'Converse',
-        top: '223.545px',
-        left: '589px',
+        name: 'Koma',
+        top: '437.843px',
+        left: '356.266px',
         image: '/images/image-2.png',
 
     },
     {
         id: '31',
-        name: 'Ichiban Sushi',
-        top: '241.545px',
-        left: '524px',
+        name: 'Ice Bar',
+        top: '429.289px',
+        left: '342.723px',
         image: '/images/default-image.png',
 
     },
     {
         id: '32',
-        name: 'Op Tunggal',
-        top: '256.545px',
-        left: '494px',
+        name: 'Creeps',
+        top: '420.023px',
+        left: '328.467px',
         image: '/images/image-2.png',
 
     },
     {
         id: '33',
-        name: 'A&W Restaurant',
-        top: '271.545px',
-        left: '465px',
+        name: 'Skechers',
+        top: '435.704px',
+        left: '441.089px',
         image: '/images/default-image.png',
 
     },
     {
         id: '34',
-        name: 'Optik Seis',
-        top: '296.545px',
-        left: '435px',
+        name: 'Nobby Fashion',
+        top: '417.172px',
+        left: '473.878px',
         image: '/images/image-2.png'
     },
     {
         id: '35',
-        name: 'Gosh',
-        top: '308.545px',
-        left: '411px',
+        name: 'Brahouse',
+        top: '408.618px',
+        left: '490.273px',
         image: '/images/default-image.png',
 
     },
     {
         id: '36',
-        name: 'Belagio',
-        top: '320.545px',
-        left: '388px',
+        name: 'Cardinal',
+        top: '393.649px',
+        left: '518.072px',
         image: '/images/image-2.png',
 
     },
     {
         id: '37',
-        name: 'Giordano',
-        top: '334.545px',
-        left: '362px',
+        name: 'Guardian',
+        top: '375.116px',
+        left: '550.148px',
         image: '/images/default-image.png',
 
     },
     {
         id: '38',
-        name: 'Donini',
-        top: '359.545px',
-        left: '314px',
+        name: `D'Cost Seating Area`,
+        top: '311.909px',
+        left: '555px',
         image: '/images/image-2.png',
 
     },
     {
         id: '39',
-        name: 'Rotili',
-        top: '373.545px',
-        left: '286px',
+        name: `D'Cost`,
+        top: '318.805px',
+        left: '652.791px',
         image: '/images/default-image.png',
 
     },
     {
         id: '40',
-        name: 'The Excecutive',
-        top: '387.545px',
-        left: '258px',
+        name: 'Toilets',
+        top: '466.355px',
+        left: '830.992px',
+        image: '/images/image-2.png',
+
+    },
+    {
+        id: '41',
+        name: 'Fun World',
+        top: '258.217px',
+        left: '677.026px',
+        image: '/images/image-2.png',
+
+    },
+    {
+        id: '42',
+        name: 'L1-45',
+        top: '261.781px',
+        left: '547.297px',
+        image: '/images/image-2.png',
+
+    },
+    {
+        id: '43',
+        name: 'Planet Surf',
+        top: '293.144px',
+        left: '487.421px',
+        image: '/images/image-2.png',
+
+    },
+    {
+        id: '44',
+        name: '3 Second',
+        top: '363.711px',
+        left: '351.989px',
+        image: '/images/image-2.png',
+
+    },
+    {
+        id: '45',
+        name: 'Sport Station',
+        top: '381.532px',
+        left: '320.626px',
+        image: '/images/image-2.png',
+
+    },
+    {
+        id: '46',
+        name: 'Gabino',
+        top: '395.788px',
+        left: '295.678px',
+        image: '/images/image-2.png',
+
+    },
+    {
+        id: '47',
+        name: 'L1-15&17',
+        top: '415.044px',
+        left: '268.591px',
+        image: '/images/image-2.png',
+
+    },
+    {
+        id: '48',
+        name: '_square',
+        top: '427.864px',
+        left: '237.941px',
         image: '/images/image-2.png',
 
     },
