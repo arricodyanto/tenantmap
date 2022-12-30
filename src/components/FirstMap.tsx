@@ -39,7 +39,7 @@ export const FirstMap = () => {
     // console.log(isFound)
 
   return (
-      <Box id='wrapper' className='container relative border-2 border-slate-300 mx-auto lg:max-w-[1080px] sm:max-w-[650px]:'>
+      <Box id='wrapper' className='container relative border-2 border-slate-300 mx-auto lg:max-w-[1040px] sm:max-w-[650px]:'>
         <TransformWrapper
         initialScale={1} limitToBounds={false} centerOnInit={true}
         >
@@ -100,7 +100,7 @@ export const FirstMap = () => {
                         }
                 })}
 
-                <Box id='map-canvass' className='w-[1080px]'>
+                <Box id='map-canvass' className='w-[1040px]'>
                 <svg width="1040" height="900" viewBox="0 0 1040 900" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="FF">
                     <path id="Vector 120" d="M70.8984 449.438L352.92 301.681L338.664 295.266L388.916 267.467L404.598 274.239L584.224 183L962.357 370.094C976.254 376.97 977.26 396.408 964.147 404.681L1000.5 421.432L765.275 569.695L723.22 544.39L438.812 716.888L330.823 647.39L292.688 669.843L141.574 570.764L176.858 551.162L69.5801 484.113C56.479 475.925 57.2135 456.607 70.8984 449.438Z" fill="#F4F4F4"/>
