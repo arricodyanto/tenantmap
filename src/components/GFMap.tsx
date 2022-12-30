@@ -99,7 +99,7 @@ export const GFMap = () => {
                         }
                 })}
 
-                <Box id='map-canvas' className='w-[1080px]'>
+                <Box id='map-canvas' className='w-[1000px]'>
                     <svg width="1080" height="900" viewBox="0 0 1080 900" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="GF">
                             <g id="ground" filter="url(#filter0_d_1_2)">
