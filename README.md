@@ -45,15 +45,15 @@ This project consists of 3 floor maps of a shopping center.
 
 Ground Floor map is located on route "/"
 
-### https://tenant.vercel.app/
+### https://tenantmap.vercel.app/
 
 First Floor map is located on route "/first"
 
-### https://tenant.vercel.app/first
+### https://tenantmap.vercel.app/first
 
 Second Floor map is located on route "/second"
 
-### https://tenant.vercel.app/second
+### https://tenantmap.vercel.app/second
 
 
 ## Learn More
